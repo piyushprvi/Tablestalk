@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pilot_purple">#FF6200EE</color>
+    <color name="pilot_purple_dark">#FF3700B3</color>
+    <color name="pilot_teal">#FF03DAC5</color>
+    <color name="pilot_teal_dark">#FF018786</color>
+    <color name="pilot_background">#FF121212</color>
+    <color name="pilot_surface">#FF1E1E1E</color>
+    <color name="pilot_on_surface">#FFFFFFFF</color>
+    <color name="log_local">#FF4CAF50</color>
+    <color name="log_gemini">#FF2196F3</color>
+    <color name="log_error">#FFF44336</color>
+</resources>
