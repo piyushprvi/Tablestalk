@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Adaptive icon foreground layer for TabletPilot -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,20 C65,20 74,30 74,54 C74,66 68,76 54,82 C40,76 34,66 34,54 C34,30 43,20 54,20Z" />
+    <path
+        android:fillColor="#7C4DFF"
+        android:pathData="M54,30 L62,50 L82,50 L67,62 L73,82 L54,70 L35,82 L41,62 L26,50 L46,50Z" />
+</vector>

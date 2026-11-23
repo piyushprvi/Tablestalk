@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TabletPilot</string>
+    <string name="accessibility_service_label">TabletPilot Assistant</string>
+    <string name="accessibility_service_description">TabletPilot uses accessibility services to automate device actions on your behalf — opening apps, clicking buttons, typing text, and navigating the UI based on your voice or text commands.</string>
+    <string name="notification_channel_name">Assistant Service</string>
+    <string name="notification_channel_description">Persistent notification for TabletPilot always-on assistant</string>
+    <string name="notification_title">TabletPilot Active</string>
+    <string name="notification_text">Tap the floating bubble or say a command</string>
+    <string name="tile_label">TabletPilot</string>
+    <string name="action_open_assistant">Open Assistant</string>
+    <string name="action_stop_service">Stop Service</string>
+    <string name="permission_accessibility">Accessibility Service</string>
+    <string name="permission_overlay">Display Over Other Apps</string>
+    <string name="permission_battery">Battery Optimization</string>
+    <string name="permission_notifications">Notifications</string>
+    <string name="permission_microphone">Microphone</string>
+    <string name="permission_granted">Granted</string>
+    <string name="permission_required">Required</string>
+    <string name="grant">Grant</string>
+    <string name="service_start">Start Assistant</string>
+    <string name="service_stop">Stop Assistant</string>
+    <string name="settings_api_key">Gemini API Key</string>
+    <string name="settings_model">AI Model</string>
+    <string name="settings_fast_path">Local Fast-Path Router</string>
+    <string name="settings_fast_path_desc">Skip network for instant commands (open app, go back, scroll, etc.)</string>
+    <string name="log_empty">No commands yet. Try tapping the floating bubble or the QS tile!</string>
+    <string name="log_clear">Clear Log</string>
+    <string name="command_hint">Type a command or tap the mic…</string>
+    <string name="model_flash_lite">gemini-2.0-flash-lite (Fast)</string>
+    <string name="model_flash">gemini-2.5-flash (Smart)</string>
+</resources>
