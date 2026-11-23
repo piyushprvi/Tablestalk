@@ -21,11 +21,16 @@ jobs:
           yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
           $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "platforms;android-36" "build-tools;34.0.0"
 
-      - name: Create local.properties
+      - name: Configure Gradle Environment
         run: |
+          mkdir -p ~/.gradle
+          echo "android.useAndroidX=true" >> ~/.gradle/gradle.properties
+          echo "android.nonTransitiveRClass=true" >> ~/.gradle/gradle.properties
+          echo "org.gradle.jvmargs=-Xmx2048m -Dandroid.useAndroidX=true" >> ~/.gradle/gradle.properties
+          echo "android.useAndroidX=true" > gradle.properties
+          echo "android.nonTransitiveRClass=true" >> gradle.properties
           echo "sdk.dir=$ANDROID_HOME" > local.properties
           echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> local.properties
-          echo "android.useAndroidX=true" > gradle.properties
 
       - name: Generate wrapper
         run: |
@@ -34,8 +39,11 @@ jobs:
           /opt/gradle/gradle-8.11.1/bin/gradle wrapper
           chmod +x gradlew
 
+      - name: Ensure Proguard Rules file exists
+        run: touch app/proguard-rules.pro
+
       - name: Build Debug APK
-        run: ./gradlew assembleDebug -Pandroid.useAndroidX=true -Pandroid.enableJetifier=true --stacktrace
+        run: ./gradlew assembleDebug -Dandroid.useAndroidX=true -Dandroid.enableJetifier=true --stacktrace
 
       - uses: actions/upload-artifact@v4
         with:
